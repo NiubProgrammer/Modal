@@ -1,0 +1,68 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #416c93;
+}
+main {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+main .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #fff3;
+}
+main .modal .modal-dialog {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 75%;
+}
+main .modal .section-modal {
+    background-color: #fff;
+    text-align: center;
+    border-radius:20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .4), -5px -5px 15px rgba(255, 255, 255, .4);
+    padding: 20px;
+    margin-inline: 30%;
+}
+main .container {
+    background-color: #ffffffcc;
+    text-align: center;
+    border-radius:20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .4), -5px -5px 15px rgba(255, 255, 255, .4);
+    padding: 20px;
+}
+main .container .parent {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0.5rem;
+    margin: 1rem;
+    padding-inline: 3rem;
+    align-items: center;
+}
+main .container .parent h1, .modal h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+main .container .parent button, .modal button {
+    justify-self: center;
+    cursor: pointer;
+    height: 70%;
+    padding-inline: 2rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4), -5px -5px 5px rgba(255, 255, 255, .4);
+    margin: 15px;
+}
+main .container .parent button:hover {
+    background-color: rgba(0,0,0,.2);
+}
